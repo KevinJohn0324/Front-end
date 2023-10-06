@@ -17,7 +17,7 @@ h6 {
 
 body {
   position: relative;
-
+  overflow-x: hidden;
   img.fixed-image {
     min-height: 100vh;
     position: fixed;
@@ -222,6 +222,19 @@ body {
           li {
             padding: 0.5rem 0.25rem;
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    header {
+      position: static;
+      nav {
+        ul {
+          flex-direction: column;
         }
       }
     }

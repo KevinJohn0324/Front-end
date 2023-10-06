@@ -16,6 +16,7 @@ h6 {
 
 body {
   position: relative;
+  overflow-x: hidden;
 }
 body img.fixed-image {
   min-height: 100vh;
@@ -182,6 +183,14 @@ body footer section.links a img {
   }
   body header nav ul li {
     padding: 0.5rem 0.25rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  body header {
+    position: static;
+  }
+  body header nav ul {
+    flex-direction: column;
   }
 }
 /* width */
